@@ -1,0 +1,60 @@
+#fsi-floating-bar {
+	position: fixed;
+	top: var( --fsi-top-offset, 200px );
+	z-index: 9999;
+	display: flex;
+	flex-direction: column;
+	gap: var( --fsi-icon-spacing, 8px );
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#fsi-floating-bar.fsi-position-left {
+	left: 0;
+}
+
+#fsi-floating-bar.fsi-position-right {
+	right: 0;
+}
+
+#fsi-floating-bar .fsi-icon-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: var( --fsi-icon-size, 44px );
+	height: var( --fsi-icon-size, 44px );
+	background-color: var( --fsi-bg-color, #333333 );
+	color: var( --fsi-icon-color, #ffffff );
+	text-decoration: none;
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#fsi-floating-bar.fsi-shape-circle .fsi-icon-link {
+	border-radius: 50%;
+}
+
+#fsi-floating-bar.fsi-shape-square .fsi-icon-link {
+	border-radius: 0;
+}
+
+#fsi-floating-bar.fsi-shape-none .fsi-icon-link {
+	background-color: transparent;
+}
+
+#fsi-floating-bar .fsi-icon-link:hover,
+#fsi-floating-bar .fsi-icon-link:focus {
+	background-color: var( --fsi-hover-color, #0073aa );
+}
+
+#fsi-floating-bar.fsi-shape-none .fsi-icon-link:hover,
+#fsi-floating-bar.fsi-shape-none .fsi-icon-link:focus {
+	background-color: transparent;
+	color: var( --fsi-hover-color, #0073aa );
+}
+
+#fsi-floating-bar .fsi-icon-svg {
+	width: 55%;
+	height: 55%;
+	fill: currentColor;
+}

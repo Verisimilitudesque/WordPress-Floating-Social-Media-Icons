@@ -1,0 +1,16 @@
+.fsi-settings-wrap h2 {
+	margin-top: 2em;
+}
+
+.fsi-icons-table td {
+	vertical-align: middle;
+	padding: 10px;
+}
+
+.fsi-icons-table .fsi-remove-icon-row {
+	color: #a00;
+}
+
+.fsi-color-picker {
+	max-width: 100px;
+}
